@@ -1,7 +1,7 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
   devtools: { enabled: true },
-  modules: ['@nuxt/ui', '@nuxt/eslint', '@nuxtjs/supabase'],
+  modules: ['@nuxt/ui-pro', '@nuxt/eslint', '@nuxtjs/supabase'],
   supabase: {
     redirect: false
   },
@@ -12,10 +12,8 @@ export default defineNuxtConfig({
     },
   },
   css: ['~/assets/css/main.css'],
-
   future: {
     compatibilityVersion: 4
   },
-
   compatibilityDate: '2024-11-27'
 })
