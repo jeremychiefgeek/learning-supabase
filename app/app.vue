@@ -1,9 +1,7 @@
 <script setup lang="ts">
-import { createClient } from '@supabase/supabase-js';
-const config = useRuntimeConfig()
-const supabase = createClient(config.public.supabaseUrl, config.public.supabaseAnonKey);
+const supabase = useSupabaseClient()
 onMounted(() => {
-  supabase.storage.listBuckets().then((result) => {
+  supabase.storage.listBuckets().then((result: any) => {
     console.log("Bucket list", result);
   })
 });
